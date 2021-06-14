@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+* , *::before , *::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+html {
+  box-sizing: inherit;
+}
+
+/* font-family: 'Roboto', sans-serif; */
+/* logo font: font-family: 'Bebas Neue', cursive; */
+/* font-family: 'Pacifico', cursive; */
+
+.svg{
+  width: 25px;
+  height: 25px;
+  display: inline;
+  fill: white;
+  margin-right: 2.5rem;
+  transition: all .5s;
+}
+
+.quick-info{
+  background-color: #222831;
+  color: #deeeea;
+  display: flex;
+  justify-content: end;
+  font-size: 5rem;
+  list-style-type: none;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.quick-info p {
+  display: inline;
+  font-family: 'Roboto', sans-serif;
+}
+
+.quick-info li {
+  display: flex;
+  align-items: center;
+  margin-right: 10rem;
+  cursor: default;
+  transition: all .5s;
+}
+
+.quick-info li:hover svg{
+  fill: #00adb5;
+}
+
+.quick-info li:hover{
+  color:#00adb5;
+}
+
+@media only screen and (max-width: 1024px) {
+  .svg {margin-right: 1rem;}
+
+  .quick-info li {
+    margin-right: 7rem;
+    font-size: 2.4rem;
+  }
+}
+
+/*****************************************\
+|             END OF QUICK INFO          |
+\****************************************/
+
